@@ -373,7 +373,7 @@ ul.leaders span + span {
 /* Position the image container (needed to position the left and right arrows) */
 .gallery-container {
   position: relative;
-  max-width: 800px;
+  max-width: 500px;
 }
 
 /* Hide the images by default */
