@@ -432,8 +432,9 @@ ul.leaders span + span {
 }
 
 .gallery-row {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   display: grid;
+  column-gap: 15px;
 }
 
 .gallery-row:after {
