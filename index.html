@@ -25,10 +25,17 @@
     <header>
         <nav class="navbar">
             <div class="navbar-container">
-                <a class="navbar-brand" href="#">Jérémy Essig</a>
-                <ul class="navbar-ul">
+                <div class="navbar-menu">
+                    <a class="navbar-brand" href="#">Jérémy Essig</a>
+                    <div class="hamburger" id="hamburger" onclick="showMenu()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <ul class="navbar-ul" id="navbar-ul">
                     <li class="nav-item">
-                    <a class="nav-link active hover-underline-animation" aria-current="page" href="#profil">Profil</a>
+                    <a class="nav-link hover-underline-animation" aria-current="page" href="#profil">Profil</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link hover-underline-animation" href="#competences">Compétences</a>
@@ -227,6 +234,14 @@
                     <div class="card-header"><i class="fas fa-brain contact-icon"></i>Connaissances théoriques</div>
                     <div class="card-body">
                         <ul class="leaders">
+                            <li>
+                                <span>Algorithmie (if/and/or/for/while/etc...)</span>
+                                <span class="rating">
+                                <i class="fa fa-circle"></i>
+                                <i class="fa fa-circle"></i>
+                                <i class="fa fa-circle"></i>
+                                </span>
+                            </li>
                             <li>
                                 <span>Programmation fonctionnelle</span>
                                 <span class="rating">
@@ -525,6 +540,7 @@
                     <p>Le logiciel est conçu en GDScript et permet de créer facilement un emploi du temps. J'ai réalisé l'intégralité du site, de la
                         concpetion de l'interface  
                     </p>
+                    <a href="https://sites.google.com/view/schedulemanager/accueil" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accéder</a>
                 </div>
                 <div class="project-captation" id="project-2">
                     <h3>Site web Inari Sensei</h3>
@@ -532,6 +548,7 @@
                     <p>A partir de la plateform blogger, j'ai créée en HTM/CSS/JavaScript un template sur mesure pour ce site dessin. J'ai également optimisé le site
                         au niveau de la SEO permettant d'accueillir plus de 6'000 visiteurs par mois (90% du traffic passe par Google).
                     </p>
+                    <a href="https://inarisensei.blogspot.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Accéder</a>
                 </div>
                 <div class="project-captation" id="project-3">
                     <h3>Portfolio</h3>
@@ -594,21 +611,24 @@
       </div>
       <div class="modal-body">
         <img src="" alt="" id="modalImg">
-        <div class="programm-description">
-            <p>J'ai réalisé le site que vous êtes actuellement en train de visiter. Je peux réaliser ce type de site dès aujourd'hui pour votre entreprise.</p>
-                            <p>Ce site a été entièrement réalisé en HTML5 CSS3 et JavaScript. Je me suis inspiré de différents sites pour son design. Après avoir conçu la maquette et défini les couleurs principales, j'ai codé le site
-                                avec Visual Studio Code. J'ai utilisé également quelques plugins JS notamment pour la timeline que j'ai intégrés et personnalisés. 
-                            </p>
-        </div>
-        <div class="programm-description">
-            <p>J'ai créée le site web Inari Sensei et j'ai réalisé le template du site.</p>
-            <p>A partir de la plateform blogger, j'ai créée en HTM/CSS/JavaScript un template sur mesure pour ce site dessin. J'ai également optimisé le site
-                au niveau de la SEO permettant d'accueillir plus de 6'000 visiteurs par mois (90% du traffic passe par Google).
-            </p>
-        </div>
         <img src="" alt="">
       </div>
     </div>
   
   </div>
+
+  <script>
+      const navbar_ul = document.getElementById("navbar-ul");
+      const hamburger = document.getElementById("hamburger");
+    function showMenu() {
+      console.log(navbar_ul);
+      if (navbar_ul.className === "navbar-ul") {
+        navbar_ul.className += " responsive";
+        hamburger.className += " active-hamburger";
+      } else {
+        navbar_ul.className = "navbar-ul";
+        hamburger.className += "hamburger";
+      }
+    }
+    </script>
 </body>
