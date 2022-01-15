@@ -23,9 +23,20 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  text-align: center;
+  line-height: 3rem;
+}
+
+h2 {
+  text-align: center;
+  line-height: 2.8rem;
+}
+
 h3 {
   font-size: 1.4rem;
-  text-align: left;
+  text-align: center;
+  line-height: 2rem;
 }
 
 .align-left {
@@ -225,10 +236,6 @@ ____________________________________________________________________*/
 
 /* Corps de page */
 
-.wrapper {
-  /* scroll-behavior: smooth; */
-}
-
 /*********************/
 
 .static {
@@ -236,7 +243,12 @@ ____________________________________________________________________*/
 }
 
 .is-slanted--top-left {
-  /* -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% calc(0% + 4rem)); */
+  -webkit-clip-path: polygon(
+    100% 0,
+    100% calc(100% - 3rem),
+    0 100%,
+    0 calc(0% + 3rem)
+  );
   clip-path: polygon(100% 0, 100% calc(100% - 3rem), 0 100%, 0 calc(0% + 3rem));
   margin: -6rem 0;
   padding: 12rem 0;
@@ -266,30 +278,24 @@ ____________________________________________________________________*/
 }
 
 #animated-text {
-  /* position: absolute;
-  width: 500px; */
-  /* border-radius: 10px; */
   height: 100px;
   left: calc(50% - 200px);
   top: calc(50% - 100px);
   color: white;
   font-size: 2.4rem;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   backdrop-filter: blur(2px);
   text-shadow: 1px 1px 2px black;
   padding: 0;
 }
 
 #animated-text-target {
-  display: flex;
+  /* display: flex; */
   position: relative;
   padding: 0;
 }
 #animated-text-target::after {
+  display: inline-block;
   content: "";
-  /* position: absolute; */
   height: 6rem;
   width: 5px;
   margin-left: 10px;
@@ -359,10 +365,6 @@ ____________________________________________________________________*/
 }
 
 /************ Section Competences *****************/
-.competences {
-  /* height: 1200px;
-  padding-top: 200px; */
-}
 
 ul.leaders li {
   clear: both;
