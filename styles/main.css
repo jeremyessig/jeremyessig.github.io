@@ -528,8 +528,8 @@ __________________________________________________*/
     row-gap: 0.5rem;
     column-gap: 0.5rem;
   }
-  .column {
-    display: none;
+  .gallery-row {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .container {
