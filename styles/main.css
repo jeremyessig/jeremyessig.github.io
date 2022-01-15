@@ -1,5 +1,6 @@
 html {
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -545,6 +546,10 @@ __________________________________________________*/
     display: none;
   }
 
+  .container {
+    padding: 10px 30px;
+  }
+
   .navbar-container {
     display: block;
   }
@@ -597,5 +602,10 @@ __________________________________________________*/
 
   #progressBar {
     margin-top: 10px;
+  }
+
+  .welcome p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
   }
 }
