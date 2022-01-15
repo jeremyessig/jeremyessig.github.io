@@ -1,6 +1,6 @@
 html {
   overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -20,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
   color: #444649;
+  overflow-x: hidden;
 }
 
 h3 {
@@ -535,7 +536,7 @@ footer {
 __________________________________________________*/
 
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
   .grid-2,
   .grid-3 {
     grid-template-columns: 1fr;
