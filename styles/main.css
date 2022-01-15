@@ -196,9 +196,16 @@ ____________________________________________________________________*/
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #5e2750;
   margin-right: auto;
   font-size: 1.6rem;
+}
+
+.navbar-brand {
+  color: #5e2750;
+}
+
+.navbar-brand:visited {
+  color: #5e2750;
 }
 
 .navbar-menu a {
