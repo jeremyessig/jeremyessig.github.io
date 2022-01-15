@@ -273,46 +273,22 @@ ____________________________________________________________________*/
   line-height: 2.1rem;
 }
 
+.welcome-title h1,
+h2 {
+  text-align: left;
+}
+
 .welcome-title h2 {
   font-size: 2rem;
 }
 
-#animated-text {
-  height: 100px;
-  left: calc(50% - 200px);
-  top: calc(50% - 100px);
+.typewriter-wrap {
   color: white;
-  font-size: 2.4rem;
-  backdrop-filter: blur(2px);
-  text-shadow: 1px 1px 2px black;
-  padding: 0;
+  font-size: 4rem;
 }
 
-#animated-text-target {
-  /* display: flex; */
-  position: relative;
-  padding: 0;
-}
-#animated-text-target::after {
-  display: inline-block;
-  content: "";
-  height: 6rem;
-  width: 5px;
-  margin-left: 10px;
-  background: white;
-  top: 0;
-  transform: translateY(-4px);
-  right: -5px;
-  animation: anim 0.8s linear infinite;
-  padding: 0;
-}
-@keyframes anim {
-  50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
+div.welcome-title > h1 > a {
+  text-decoration: none;
 }
 
 .feature-box {
