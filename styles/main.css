@@ -484,6 +484,7 @@ ul.leaders span + span {
 
 .project-captation {
   display: none;
+  min-height: 420px;
 }
 
 .project-active {
