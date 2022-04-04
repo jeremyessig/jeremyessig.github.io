@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  background-color: #353535;
+  &__brand {
+    margin-bottom: 8px;
+    svg {
+      height: 24px;
+      width: auto;
+      path {
+        fill: white;
+      }
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    a {
+      cursor: pointer;
+      color: $font-color-secondary;
+    }
+    a:hover {
+      color: $font-color-secondary;
+      text-decoration: underline;
+    }
+    &__proposal,
+    &__partnership,
+    &__legal,
+    &__contact {
+      margin: 0.5rem 0;
+      color: $font-color-secondary;
+      a {
+        color: $font-color-secondary;
+      }
+      i {
+        width: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    align-items: center;
+    &__text {
+      text-align: center;
+    }
+  }
+}

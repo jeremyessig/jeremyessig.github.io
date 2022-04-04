@@ -1,0 +1,63 @@
+.btn {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: futura-pt-bold, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-primary {
+  height: 56px;
+  width: 256px;
+  border-radius: 56px;
+  box-shadow: 0 0 10px $box-shadow-color;
+  color: white;
+  background-color: grey;
+  background-image: linear-gradient(
+    158deg,
+    rgba(255, 121, 217, 0.87) 0%,
+    rgba(146, 86, 220, 0.877) 100%
+  );
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.644);
+  color: white;
+  background-color: #fff;
+}
+
+.btn-like {
+  @include flex-center;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  .fa-regular.fa-heart {
+    position: absolute;
+    display: block;
+  }
+  .fa-solid.fa-heart {
+    position: absolute;
+    display: none;
+    background: #9356dc;
+    background: -webkit-linear-gradient(to top, #9356dc 0%, #ff79da 100%);
+    background: -moz-linear-gradient(to top, #9356dc 0%, #ff79da 100%);
+    background: linear-gradient(to top, #9356dc 0%, #ff79da 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.btn-like:hover {
+  .fa-solid.fa-heart {
+    display: block;
+    animation: fill-like-solid 0.5s;
+  }
+}
