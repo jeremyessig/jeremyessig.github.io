@@ -825,6 +825,18 @@ h4 {
     background-image: url("img/image-de-presentation.jpg");
 }
 
+#quotes > p{
+    margin: 0 3%;
+    font-size: 1.8rem;
+    text-decoration;
+    font-style: italic;
+}
+
+.hauthor > p{
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
